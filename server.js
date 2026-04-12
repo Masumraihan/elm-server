@@ -107,7 +107,7 @@ app.post("/saudi-by-nin", async (req, res) => {
 });
 
 // Start server
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
   console.log(`📡 Test endpoint → POST http://localhost:${PORT}/saudi-by-nin`);
   console.log(`   Body example: { "nin": "1234567890", "birthDateG": "1995-03-15" }`);
