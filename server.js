@@ -38,6 +38,10 @@ const SERVICE_IDENTIFIER = "9e8aef29-9e63-4b91-8aef-9ec240b1e624";
 const USAGE_CODE = "USC20001";
 const OPERATOR_ID = "100001010";
 
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
+
 // POST /saudi-by-nin
 // Body: { "nin": "1234567890", "birthDateG": "1990-01-01" }
 app.post("/saudi-by-nin", async (req, res) => {
