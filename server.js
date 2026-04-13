@@ -86,6 +86,8 @@ app.post("/saudi-by-nin", async (req, res) => {
       "app-key": CREDENTIALS.appKey,
     };
 
+    console.log({ dataHeaders, dataParams });
+
     const apiResponse = await axios.get(DATA_URL, {
       headers: dataHeaders,
       params: dataParams,
