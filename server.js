@@ -78,7 +78,7 @@ app.post("/saudi-by-nin", async (req, res) => {
     const dataParams = { nin, birthDateG };
 
     const dataHeaders = {
-      authorization: `bearer ${accessToken}`,
+      authorization: `Bearer ${accessToken}`,
       "service-identifier": SERVICE_IDENTIFIER,
       "usage-code": USAGE_CODE,
       "operator-id": OPERATOR_ID,
